@@ -49,7 +49,7 @@ export const myData = async (token) => {
     const response = await fetch(`${BASE_URL}/users/me`, {
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${TOKEN_STRING_HERE}`
+        'Authorization': `Bearer ${token}`
       },
     });
     const result = await response.json();
